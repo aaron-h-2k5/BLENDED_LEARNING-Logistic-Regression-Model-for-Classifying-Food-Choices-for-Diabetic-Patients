@@ -9,29 +9,35 @@ To implement a logistic regression model to classify food items for diabetic pat
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. **Load the Dataset**  
-   Import and load the dataset for analysis.
+1. **Import Libraries**:  
+   - Import pandas for data manipulation, scikit-learn for modeling and evaluation, and seaborn and matplotlib for visualization.  
 
-2. **Data Preprocessing**  
-   Clean and preprocess the data to ensure consistency and accuracy.
+2. **Dataset Loading**:  
+   - Load the dataset from the specified URL.  
 
-3. **Split Data into Training and Testing Sets**  
-   Divide the dataset into training and testing subsets for model validation.
+3. **Dataset Inspection**:  
+   - Examine the dataset by displaying basic information and previewing the data to understand its structure.  
 
-4. **Train Logistic Regression Model**  
-   Use the training data to fit and train a logistic regression model.
+4. **Target Variable Encoding**:  
+   - Convert the `class` column into a binary variable indicating whether a patient is diabetic.  
 
-5. **Generate Predictions**  
-   Apply the trained model to predict outcomes on the testing data.
+5. **Feature and Target Definition**:  
+   - Separate the dataset into the feature matrix (X) and target variable (y).  
 
-6. **Evaluate Model Performance**  
-   Assess the model’s accuracy and performance metrics.
+6. **Data Splitting**:  
+   - Divide the data into training and testing subsets with an 80-20 split.  
 
-7. **Visualize Results**  
-   Create visualizations to interpret and present the model's outcomes.
+7. **Model Training**:  
+   - Train a Logistic Regression model using the training data.  
 
-8. **Make Predictions on New Data**  
-   Utilize the trained model to make predictions on fresh or unseen data.
+8. **Prediction Generation**:  
+   - Use the trained model to predict labels for the test dataset.  
+
+9. **Model Evaluation**:  
+   - Assess model performance by calculating accuracy, precision, recall, F1-score, and by generating a classification report.  
+
+10. **Confusion Matrix Visualization**:  
+   - Plot a heatmap of the confusion matrix to visualize the model’s evaluation results.  
 
 ## Program:
 ```
